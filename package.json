@@ -4,12 +4,18 @@
   "description": "Package for custom Chakra UI Icon Components using devicon.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "plop"
   },
   "keywords": [
     "chakra-ui",
     "devicon"
   ],
   "author": "zac-ng",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@chakra-ui/icons": "^1.0.13",
+    "plop": "^2.7.4",
+    "react": "^17.0.2"
+  }
 }
