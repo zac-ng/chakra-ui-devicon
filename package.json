@@ -1,0 +1,15 @@
+{
+  "name": "chakra-ui-devicon",
+  "version": "1.0.0",
+  "description": "Package for custom Chakra UI Icon Components using devicon.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chakra-ui",
+    "devicon"
+  ],
+  "author": "zac-ng",
+  "license": "ISC"
+}
