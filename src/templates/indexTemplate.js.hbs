@@ -1,0 +1,9 @@
+{{#each files}}
+import {{this}} from './{{this}}'
+{{/each}}
+
+export {
+    {{#each files}}
+        {{this}},
+    {{/each}}
+}

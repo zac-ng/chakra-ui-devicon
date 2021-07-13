@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 function MyConfirmPluginConstructor() {
   // ...your main plugin code
   this.bypass = (rawValue, promptConfig) => {
@@ -30,15 +32,8 @@ module.exports = plop => {
       ],
       actions: data => {
         let actions = []        
-        const fs = require('fs');
         const text = fs.readFileSync(data['path']).toString('utf-8');
-        // const pathRegex = /(<path).*?(\/>)/g;
-        // let result = text.match(pathRegex);
-        // console.log("My Result", result)
-        // data['path'] = result;
-        // const viewboxRegex = /a/g;
-        // result = text.match(pathRegex);
-        
+
         // Remove regular expression for xlink href
 
         let pathRegex = /(<use xlink:href).*?(\/>)/g;
@@ -52,17 +47,37 @@ module.exports = plop => {
 
         actions.push({
           type: 'add',
-          path: './src/components/{{name}}.js',
-          templateFile: './src/templates/plopTemplate.js.hbs',
+          path: './src/components/{{pascalCase name}}.js',
+          templateFile: './src/templates/componentTemplate.js.hbs',
         });
         return actions;
       }
-      // actions: [
-      //   {
-      //     type: 'add',
-      //     path: './src/components/{{name}}.js',
-      //     templateFile: './src/templates/plopTemplate.js.hbs',
-      //   },
-      // ],
+    });
+    plop.setGenerator('index', {
+      description: 'Create Index File',
+      prompts: [
+      ],
+      actions: data => {
+        
+        //  Delete previous Index.js
+
+        fs.rmSync("./index.js", {
+          force: true,
+        });
+
+        let actions = [];
+        components = [];
+
+        fs.readdirSync('./src/components').forEach(file => {
+          components.push(file.slice(0,-3));
+        });
+        data['files'] = components
+        actions.push({
+          type: 'add',
+          path: './index.js',
+          templateFile: './src/templates/indexTemplate.js.hbs',
+        });
+        return actions;
+      }
     });
   };

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "generate": "plop"
+    "generateComponents": "plop component",
+    "generateIndex": "plop index"
   },
   "keywords": [
     "chakra-ui",
