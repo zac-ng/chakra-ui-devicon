@@ -22,8 +22,17 @@ for dir in ./devicon/icons/*; do
             echo "svg path was not found in file $filename.  Skipping file."
             continue
         fi
+        # svgPath="${svgPath//\"/\'}"     # Replace " with '
+        echo "Filename $(realpath $filename)"
         echo "Adding \"$name\" Icon Component"
-        npm run generate $name $svgPath
+        # npm run generate --name $name --path "$svgPath" 
+        npm run generate --name $name --path $(realpath $filename)
+        echo ../components/$name.js
+        sed -i 's/&lt;/</g' ../components/$name.js
+        sed -i 's/&gt;/>/g' ../components/$name.js
+        sed -i 's/&quot;/"/g' ../components/$name.js
+        sed -i 's/&#x3D;/=/g' ../components/$name.js
+        exit 0
     fi
 done
 # rm -rf devicon # Remove repository

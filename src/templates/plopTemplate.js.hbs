@@ -1,12 +1,17 @@
 import React from 'react';
 import { createIcon, Icon } from "@chakra-ui/icons";
 
-const {{name}} = props => {
+{{!-- const {{name}} = props => {
   return (
-    <div>
-      {{name}}
-    </div>
+    <Icon {...props}>
+      {{path}}
+    </Icon>
   );
 };
 
-export default {{name}};
+export default {{name}}; --}}
+
+export const {{name}} = createIcon({
+  displayName: "{{name}}",
+  path: [{{path}}]
+})
