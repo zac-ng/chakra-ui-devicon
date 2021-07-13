@@ -28,11 +28,13 @@ for dir in ./devicon/icons/*; do
         # npm run generate --name $name --path "$svgPath" 
         npm run generate --name $name --path $(realpath $filename)
         echo ../components/$name.js
+
+        # Cleaning up replaced special characters by plop file
+
         sed -i 's/&lt;/</g' ../components/$name.js
         sed -i 's/&gt;/>/g' ../components/$name.js
         sed -i 's/&quot;/"/g' ../components/$name.js
         sed -i 's/&#x3D;/=/g' ../components/$name.js
-        exit 0
     fi
 done
 # rm -rf devicon # Remove repository

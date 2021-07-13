@@ -32,10 +32,24 @@ module.exports = plop => {
         let actions = []        
         const fs = require('fs');
         const text = fs.readFileSync(data['path']).toString('utf-8');
-        const regex = /(<path).*?(\/>)/g;
-        const result = text.match(regex);
-        console.log("My Result", result)
-        data['path'] = result;
+        // const pathRegex = /(<path).*?(\/>)/g;
+        // let result = text.match(pathRegex);
+        // console.log("My Result", result)
+        // data['path'] = result;
+        // const viewboxRegex = /a/g;
+        // result = text.match(pathRegex);
+        
+        // Remove regular expression for xlink href
+
+        let pathRegex = /(<use xlink:href).*?(\/>)/g;
+        let result = text.replace(pathRegex, '');
+        
+        // Remove regular expression for xmlns xlink
+
+        pathRegex = /(xmlns:xlink=").*?(")/g;
+        result = result.replace(pathRegex, '');
+        data['path'] = result
+
         actions.push({
           type: 'add',
           path: './src/components/{{name}}.js',
