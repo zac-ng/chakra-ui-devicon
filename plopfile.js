@@ -35,6 +35,7 @@ module.exports = plop => {
         const text = fs.readFileSync(data['path']).toString('utf-8');
 
         // Regular expressions for converting xlink xmlns and xml to pascalCase
+        // Remove style parameter (incompatible with react) can be remapped manually
 
         let pathRegex = /(xlink:href)/g;
         let result = text.replace(pathRegex, 'xlinkHref');
@@ -44,6 +45,9 @@ module.exports = plop => {
 
         pathRegex = /(xml:space)/g;
         result = result.replace(pathRegex, 'xmlnsSpace');
+
+        pathRegex = /(style=").*?(\")/g;
+        result = result.replace(pathRegex, '');
         data['path'] = result
 
         actions.push({
