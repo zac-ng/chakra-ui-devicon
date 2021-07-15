@@ -3,9 +3,11 @@
 git clone https://github.com/devicons/devicon.git # Clone repository
 echo "Cleaning Old Components"
 rm -rf ../components/*
+rm -rf ../../build
 for dir in ./devicon/icons/*; do
     if [ -d "$dir" ]; then
         name="$(basename "$dir")"   # Name of component
+        name="${name//-}"   # Remove dash
         path=""
         filename=$(ls $dir | grep -o -m 1 ".*-original.svg") # If there are two files that match will only include original file
         if [ -z $filename ]; then
@@ -19,15 +21,16 @@ for dir in ./devicon/icons/*; do
         filename=$dir/$filename
         echo "Filename $(realpath $filename)"
         echo "Adding \"$name\" Icon Component"
-        npm run generateComponents --name $name --path $(realpath $filename)
+        npm run generateComponents --name "${name}Icon" --path $(realpath $filename)
 
         # Cleaning up replaced special characters by plop file
         
         name=${name^}
-        sed -i 's/&lt;/</g' ../components/$name.js
-        sed -i 's/&gt;/>/g' ../components/$name.js
-        sed -i 's/&quot;/"/g' ../components/$name.js
-        sed -i 's/&#x3D;/=/g' ../components/$name.js
+        echo "Cleaning $name"
+        sed -i 's/&lt;/</g' ../components/"${name}Icon".js
+        sed -i 's/&gt;/>/g' ../components/"${name}Icon".js
+        sed -i 's/&quot;/"/g' ../components/"${name}Icon".js
+        sed -i 's/&#x3D;/=/g' ../components/"${name}Icon".js
     fi
 done
 npm run build

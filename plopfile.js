@@ -34,15 +34,16 @@ module.exports = plop => {
         let actions = []        
         const text = fs.readFileSync(data['path']).toString('utf-8');
 
-        // Remove regular expression for xlink href
+        // Regular expressions for converting xlink xmlns and xml to pascalCase
 
-        let pathRegex = /(<use xlink:href).*?(\/>)/g;
-        let result = text.replace(pathRegex, '');
-        
-        // Remove regular expression for xmlns xlink
+        let pathRegex = /(xlink:href)/g;
+        let result = text.replace(pathRegex, 'xlinkHref');
 
-        pathRegex = /(xmlns:xlink=").*?(")/g;
-        result = result.replace(pathRegex, '');
+        pathRegex = /(xmlns:xlink)/g;
+        result = result.replace(pathRegex, 'xmlnsXlink');
+
+        pathRegex = /(xml:space)/g;
+        result = result.replace(pathRegex, 'xmlnsSpace');
         data['path'] = result
 
         actions.push({
