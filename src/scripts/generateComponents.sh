@@ -30,5 +30,6 @@ for dir in ./devicon/icons/*; do
         sed -i 's/&#x3D;/=/g' ../components/$name.js
     fi
 done
+npm run build
 npm run generateIndex
 rm -rf devicon # Remove repository

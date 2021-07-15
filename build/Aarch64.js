@@ -2,6 +2,9 @@ import React from 'react';
 import { createIcon, Icon } from "@chakra-ui/icons";
 import { jsx as _jsx } from "react/jsx-runtime";
 import { jsxs as _jsxs } from "react/jsx-runtime";
+
+export default {}
+
 export const Aarch64 = createIcon({
   displayName: "Aarch64",
   path: /*#__PURE__*/_jsxs("svg", {

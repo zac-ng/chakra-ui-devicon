@@ -68,7 +68,7 @@ module.exports = plop => {
         let actions = [];
         components = [];
 
-        fs.readdirSync('./src/components').forEach(file => {
+        fs.readdirSync('./build').forEach(file => {
           components.push(file.slice(0,-3));
         });
         data['files'] = components

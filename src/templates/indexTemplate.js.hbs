@@ -1,6 +1,8 @@
 {{#each files}}
-import {{this}} from './src/components/{{this}}'
+import { {{this}} } from './build/{{this}}'
 {{/each}}
+
+export default {}
 
 export {
     {{#each files}}
