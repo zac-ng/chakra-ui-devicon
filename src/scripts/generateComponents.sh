@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# git clone https://github.com/devicons/devicon.git # Clone repository
+git clone https://github.com/devicons/devicon.git # Clone repository
 echo "Cleaning Old Components"
 rm -rf ../components/*
 for dir in ./devicon/icons/*; do
@@ -31,4 +31,4 @@ for dir in ./devicon/icons/*; do
     fi
 done
 npm run generateIndex
-# rm -rf devicon # Remove repository
+rm -rf devicon # Remove repository
