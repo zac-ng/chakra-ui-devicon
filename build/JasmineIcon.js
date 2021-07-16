@@ -1,7 +1,8 @@
 import { createIcon } from "@chakra-ui/icons";
+import { Button, Text } from "@chakra-ui/react";
 import { jsx as _jsx } from "react/jsx-runtime";
 import { jsxs as _jsxs } from "react/jsx-runtime";
-export const JasmineIcon = createIcon({
+const JasmineIcon = createIcon({
   displayName: "JasmineIcon",
   path: /*#__PURE__*/_jsx("svg", {
     "data-name": "Layer 1",
@@ -19,3 +20,17 @@ export const JasmineIcon = createIcon({
     })
   })
 });
+
+const JasmineIconButton = props => /*#__PURE__*/_jsx(Button, {
+  rightIcon: /*#__PURE__*/_jsx(JasmineIcon, {}),
+  colorScheme: "teal",
+  variant: "solid",
+  rounded: "xl",
+  ...props,
+  children: /*#__PURE__*/_jsx(Text, {
+    marginTop: 1,
+    children: "JasmineIcon"
+  })
+});
+
+export { JasmineIcon, JasmineIconButton };

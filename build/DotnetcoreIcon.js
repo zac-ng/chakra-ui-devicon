@@ -1,7 +1,8 @@
 import { createIcon } from "@chakra-ui/icons";
+import { Button, Text } from "@chakra-ui/react";
 import { jsx as _jsx } from "react/jsx-runtime";
 import { jsxs as _jsxs } from "react/jsx-runtime";
-export const DotnetcoreIcon = createIcon({
+const DotnetcoreIcon = createIcon({
   displayName: "DotnetcoreIcon",
   path: /*#__PURE__*/_jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
@@ -16,3 +17,17 @@ export const DotnetcoreIcon = createIcon({
     })
   })
 });
+
+const DotnetcoreIconButton = props => /*#__PURE__*/_jsx(Button, {
+  rightIcon: /*#__PURE__*/_jsx(DotnetcoreIcon, {}),
+  colorScheme: "teal",
+  variant: "solid",
+  rounded: "xl",
+  ...props,
+  children: /*#__PURE__*/_jsx(Text, {
+    marginTop: 1,
+    children: "DotnetcoreIcon"
+  })
+});
+
+export { DotnetcoreIcon, DotnetcoreIconButton };

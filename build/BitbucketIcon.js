@@ -1,7 +1,8 @@
 import { createIcon } from "@chakra-ui/icons";
+import { Button, Text } from "@chakra-ui/react";
 import { jsx as _jsx } from "react/jsx-runtime";
 import { jsxs as _jsxs } from "react/jsx-runtime";
-export const BitbucketIcon = createIcon({
+const BitbucketIcon = createIcon({
   displayName: "BitbucketIcon",
   path: /*#__PURE__*/_jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
@@ -20,3 +21,17 @@ export const BitbucketIcon = createIcon({
     })
   })
 });
+
+const BitbucketIconButton = props => /*#__PURE__*/_jsx(Button, {
+  rightIcon: /*#__PURE__*/_jsx(BitbucketIcon, {}),
+  colorScheme: "teal",
+  variant: "solid",
+  rounded: "xl",
+  ...props,
+  children: /*#__PURE__*/_jsx(Text, {
+    marginTop: 1,
+    children: "BitbucketIcon"
+  })
+});
+
+export { BitbucketIcon, BitbucketIconButton };

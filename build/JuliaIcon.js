@@ -1,7 +1,8 @@
 import { createIcon } from "@chakra-ui/icons";
+import { Button, Text } from "@chakra-ui/react";
 import { jsx as _jsx } from "react/jsx-runtime";
 import { jsxs as _jsxs } from "react/jsx-runtime";
-export const JuliaIcon = createIcon({
+const JuliaIcon = createIcon({
   displayName: "JuliaIcon",
   path: /*#__PURE__*/_jsxs("svg", {
     xmlns: "http://www.w3.org/2000/svg",
@@ -27,3 +28,17 @@ export const JuliaIcon = createIcon({
     })]
   })
 });
+
+const JuliaIconButton = props => /*#__PURE__*/_jsx(Button, {
+  rightIcon: /*#__PURE__*/_jsx(JuliaIcon, {}),
+  colorScheme: "teal",
+  variant: "solid",
+  rounded: "xl",
+  ...props,
+  children: /*#__PURE__*/_jsx(Text, {
+    marginTop: 1,
+    children: "JuliaIcon"
+  })
+});
+
+export { JuliaIcon, JuliaIconButton };

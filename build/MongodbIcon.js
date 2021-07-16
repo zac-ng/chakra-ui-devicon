@@ -1,7 +1,8 @@
 import { createIcon } from "@chakra-ui/icons";
+import { Button, Text } from "@chakra-ui/react";
 import { jsx as _jsx } from "react/jsx-runtime";
 import { jsxs as _jsxs } from "react/jsx-runtime";
-export const MongodbIcon = createIcon({
+const MongodbIcon = createIcon({
   displayName: "MongodbIcon",
   path: /*#__PURE__*/_jsxs("svg", {
     xmlns: "http://www.w3.org/2000/svg",
@@ -89,3 +90,17 @@ export const MongodbIcon = createIcon({
     })]
   })
 });
+
+const MongodbIconButton = props => /*#__PURE__*/_jsx(Button, {
+  rightIcon: /*#__PURE__*/_jsx(MongodbIcon, {}),
+  colorScheme: "teal",
+  variant: "solid",
+  rounded: "xl",
+  ...props,
+  children: /*#__PURE__*/_jsx(Text, {
+    marginTop: 1,
+    children: "MongodbIcon"
+  })
+});
+
+export { MongodbIcon, MongodbIconButton };

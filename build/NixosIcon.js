@@ -1,7 +1,8 @@
 import { createIcon } from "@chakra-ui/icons";
+import { Button, Text } from "@chakra-ui/react";
 import { jsx as _jsx } from "react/jsx-runtime";
 import { jsxs as _jsxs } from "react/jsx-runtime";
-export const NixosIcon = createIcon({
+const NixosIcon = createIcon({
   displayName: "NixosIcon",
   path: /*#__PURE__*/_jsxs("svg", {
     xmlns: "http://www.w3.org/2000/svg",
@@ -19,3 +20,17 @@ export const NixosIcon = createIcon({
     })]
   })
 });
+
+const NixosIconButton = props => /*#__PURE__*/_jsx(Button, {
+  rightIcon: /*#__PURE__*/_jsx(NixosIcon, {}),
+  colorScheme: "teal",
+  variant: "solid",
+  rounded: "xl",
+  ...props,
+  children: /*#__PURE__*/_jsx(Text, {
+    marginTop: 1,
+    children: "NixosIcon"
+  })
+});
+
+export { NixosIcon, NixosIconButton };

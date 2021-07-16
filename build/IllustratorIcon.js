@@ -1,6 +1,7 @@
 import { createIcon } from "@chakra-ui/icons";
+import { Button, Text } from "@chakra-ui/react";
 import { jsx as _jsx } from "react/jsx-runtime";
-export const IllustratorIcon = createIcon({
+const IllustratorIcon = createIcon({
   displayName: "IllustratorIcon",
   path: /*#__PURE__*/_jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
@@ -13,3 +14,17 @@ export const IllustratorIcon = createIcon({
     })
   })
 });
+
+const IllustratorIconButton = props => /*#__PURE__*/_jsx(Button, {
+  rightIcon: /*#__PURE__*/_jsx(IllustratorIcon, {}),
+  colorScheme: "teal",
+  variant: "solid",
+  rounded: "xl",
+  ...props,
+  children: /*#__PURE__*/_jsx(Text, {
+    marginTop: 1,
+    children: "IllustratorIcon"
+  })
+});
+
+export { IllustratorIcon, IllustratorIconButton };

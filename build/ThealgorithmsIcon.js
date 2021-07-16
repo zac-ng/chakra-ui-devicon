@@ -1,7 +1,8 @@
 import { createIcon } from "@chakra-ui/icons";
+import { Button, Text } from "@chakra-ui/react";
 import { jsx as _jsx } from "react/jsx-runtime";
 import { jsxs as _jsxs } from "react/jsx-runtime";
-export const ThealgorithmsIcon = createIcon({
+const ThealgorithmsIcon = createIcon({
   displayName: "ThealgorithmsIcon",
   path: /*#__PURE__*/_jsxs("svg", {
     version: "1.1",
@@ -15,3 +16,17 @@ export const ThealgorithmsIcon = createIcon({
     })]
   })
 });
+
+const ThealgorithmsIconButton = props => /*#__PURE__*/_jsx(Button, {
+  rightIcon: /*#__PURE__*/_jsx(ThealgorithmsIcon, {}),
+  colorScheme: "teal",
+  variant: "solid",
+  rounded: "xl",
+  ...props,
+  children: /*#__PURE__*/_jsx(Text, {
+    marginTop: 1,
+    children: "ThealgorithmsIcon"
+  })
+});
+
+export { ThealgorithmsIcon, ThealgorithmsIconButton };

@@ -1,6 +1,7 @@
 import { createIcon } from "@chakra-ui/icons";
+import { Button, Text } from "@chakra-ui/react";
 import { jsx as _jsx } from "react/jsx-runtime";
-export const ExpressIcon = createIcon({
+const ExpressIcon = createIcon({
   displayName: "ExpressIcon",
   path: /*#__PURE__*/_jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
@@ -10,3 +11,17 @@ export const ExpressIcon = createIcon({
     })
   })
 });
+
+const ExpressIconButton = props => /*#__PURE__*/_jsx(Button, {
+  rightIcon: /*#__PURE__*/_jsx(ExpressIcon, {}),
+  colorScheme: "teal",
+  variant: "solid",
+  rounded: "xl",
+  ...props,
+  children: /*#__PURE__*/_jsx(Text, {
+    marginTop: 1,
+    children: "ExpressIcon"
+  })
+});
+
+export { ExpressIcon, ExpressIconButton };

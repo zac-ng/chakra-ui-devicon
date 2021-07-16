@@ -1,6 +1,7 @@
 import { createIcon } from "@chakra-ui/icons";
+import { Button, Text } from "@chakra-ui/react";
 import { jsx as _jsx } from "react/jsx-runtime";
-export const Typo3Icon = createIcon({
+const Typo3Icon = createIcon({
   displayName: "Typo3Icon",
   path: /*#__PURE__*/_jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
@@ -11,3 +12,17 @@ export const Typo3Icon = createIcon({
     })
   })
 });
+
+const Typo3IconButton = props => /*#__PURE__*/_jsx(Button, {
+  rightIcon: /*#__PURE__*/_jsx(Typo3Icon, {}),
+  colorScheme: "teal",
+  variant: "solid",
+  rounded: "xl",
+  ...props,
+  children: /*#__PURE__*/_jsx(Text, {
+    marginTop: 1,
+    children: "Typo3Icon"
+  })
+});
+
+export { Typo3Icon, Typo3IconButton };

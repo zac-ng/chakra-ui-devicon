@@ -1,7 +1,8 @@
 import { createIcon } from "@chakra-ui/icons";
+import { Button, Text } from "@chakra-ui/react";
 import { jsx as _jsx } from "react/jsx-runtime";
 import { jsxs as _jsxs } from "react/jsx-runtime";
-export const BackbonejsIcon = createIcon({
+const BackbonejsIcon = createIcon({
   displayName: "BackbonejsIcon",
   path: /*#__PURE__*/_jsxs("svg", {
     xmlns: "http://www.w3.org/2000/svg",
@@ -18,3 +19,17 @@ export const BackbonejsIcon = createIcon({
     })]
   })
 });
+
+const BackbonejsIconButton = props => /*#__PURE__*/_jsx(Button, {
+  rightIcon: /*#__PURE__*/_jsx(BackbonejsIcon, {}),
+  colorScheme: "teal",
+  variant: "solid",
+  rounded: "xl",
+  ...props,
+  children: /*#__PURE__*/_jsx(Text, {
+    marginTop: 1,
+    children: "BackbonejsIcon"
+  })
+});
+
+export { BackbonejsIcon, BackbonejsIconButton };

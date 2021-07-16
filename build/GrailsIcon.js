@@ -1,6 +1,7 @@
 import { createIcon } from "@chakra-ui/icons";
+import { Button, Text } from "@chakra-ui/react";
 import { jsx as _jsx } from "react/jsx-runtime";
-export const GrailsIcon = createIcon({
+const GrailsIcon = createIcon({
   displayName: "GrailsIcon",
   path: /*#__PURE__*/_jsx("svg", {
     viewBox: "0 0 128 128",
@@ -11,3 +12,17 @@ export const GrailsIcon = createIcon({
     })
   })
 });
+
+const GrailsIconButton = props => /*#__PURE__*/_jsx(Button, {
+  rightIcon: /*#__PURE__*/_jsx(GrailsIcon, {}),
+  colorScheme: "teal",
+  variant: "solid",
+  rounded: "xl",
+  ...props,
+  children: /*#__PURE__*/_jsx(Text, {
+    marginTop: 1,
+    children: "GrailsIcon"
+  })
+});
+
+export { GrailsIcon, GrailsIconButton };

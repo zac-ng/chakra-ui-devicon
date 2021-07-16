@@ -1,6 +1,7 @@
 import { createIcon } from "@chakra-ui/icons";
+import { Button, Text } from "@chakra-ui/react";
 import { jsx as _jsx } from "react/jsx-runtime";
-export const CrystalIcon = createIcon({
+const CrystalIcon = createIcon({
   displayName: "CrystalIcon",
   path: /*#__PURE__*/_jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
@@ -11,3 +12,17 @@ export const CrystalIcon = createIcon({
     })
   })
 });
+
+const CrystalIconButton = props => /*#__PURE__*/_jsx(Button, {
+  rightIcon: /*#__PURE__*/_jsx(CrystalIcon, {}),
+  colorScheme: "teal",
+  variant: "solid",
+  rounded: "xl",
+  ...props,
+  children: /*#__PURE__*/_jsx(Text, {
+    marginTop: 1,
+    children: "CrystalIcon"
+  })
+});
+
+export { CrystalIcon, CrystalIconButton };

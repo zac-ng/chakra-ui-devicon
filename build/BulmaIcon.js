@@ -1,6 +1,7 @@
 import { createIcon } from "@chakra-ui/icons";
+import { Button, Text } from "@chakra-ui/react";
 import { jsx as _jsx } from "react/jsx-runtime";
-export const BulmaIcon = createIcon({
+const BulmaIcon = createIcon({
   displayName: "BulmaIcon",
   path: /*#__PURE__*/_jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
@@ -11,3 +12,17 @@ export const BulmaIcon = createIcon({
     })
   })
 });
+
+const BulmaIconButton = props => /*#__PURE__*/_jsx(Button, {
+  rightIcon: /*#__PURE__*/_jsx(BulmaIcon, {}),
+  colorScheme: "teal",
+  variant: "solid",
+  rounded: "xl",
+  ...props,
+  children: /*#__PURE__*/_jsx(Text, {
+    marginTop: 1,
+    children: "BulmaIcon"
+  })
+});
+
+export { BulmaIcon, BulmaIconButton };

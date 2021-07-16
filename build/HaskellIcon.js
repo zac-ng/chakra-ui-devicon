@@ -1,7 +1,8 @@
 import { createIcon } from "@chakra-ui/icons";
+import { Button, Text } from "@chakra-ui/react";
 import { jsx as _jsx } from "react/jsx-runtime";
 import { jsxs as _jsxs } from "react/jsx-runtime";
-export const HaskellIcon = createIcon({
+const HaskellIcon = createIcon({
   displayName: "HaskellIcon",
   path: /*#__PURE__*/_jsxs("svg", {
     viewBox: "0 0 128 128",
@@ -18,3 +19,17 @@ export const HaskellIcon = createIcon({
     })]
   })
 });
+
+const HaskellIconButton = props => /*#__PURE__*/_jsx(Button, {
+  rightIcon: /*#__PURE__*/_jsx(HaskellIcon, {}),
+  colorScheme: "teal",
+  variant: "solid",
+  rounded: "xl",
+  ...props,
+  children: /*#__PURE__*/_jsx(Text, {
+    marginTop: 1,
+    children: "HaskellIcon"
+  })
+});
+
+export { HaskellIcon, HaskellIconButton };

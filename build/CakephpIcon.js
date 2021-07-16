@@ -1,6 +1,7 @@
 import { createIcon } from "@chakra-ui/icons";
+import { Button, Text } from "@chakra-ui/react";
 import { jsx as _jsx } from "react/jsx-runtime";
-export const CakephpIcon = createIcon({
+const CakephpIcon = createIcon({
   displayName: "CakephpIcon",
   path: /*#__PURE__*/_jsx("svg", {
     xmlns: "http://www.w3.org/2000/svg",
@@ -13,3 +14,17 @@ export const CakephpIcon = createIcon({
     })
   })
 });
+
+const CakephpIconButton = props => /*#__PURE__*/_jsx(Button, {
+  rightIcon: /*#__PURE__*/_jsx(CakephpIcon, {}),
+  colorScheme: "teal",
+  variant: "solid",
+  rounded: "xl",
+  ...props,
+  children: /*#__PURE__*/_jsx(Text, {
+    marginTop: 1,
+    children: "CakephpIcon"
+  })
+});
+
+export { CakephpIcon, CakephpIconButton };

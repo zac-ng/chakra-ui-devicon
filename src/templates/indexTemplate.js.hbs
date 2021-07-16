@@ -1,9 +1,10 @@
 {{#each files}}
-import { {{this}} } from './build/{{this}}'
+import { {{this}}, {{this}}Button } from './build/{{this}}'
 {{/each}}
 
 export {
     {{#each files}}
         {{this}},
+        {{this}}Button,
     {{/each}}
 }

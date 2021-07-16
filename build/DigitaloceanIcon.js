@@ -1,7 +1,8 @@
 import { createIcon } from "@chakra-ui/icons";
+import { Button, Text } from "@chakra-ui/react";
 import { jsx as _jsx } from "react/jsx-runtime";
 import { jsxs as _jsxs } from "react/jsx-runtime";
-export const DigitaloceanIcon = createIcon({
+const DigitaloceanIcon = createIcon({
   displayName: "DigitaloceanIcon",
   path: /*#__PURE__*/_jsx("svg", {
     viewBox: "0 0 128 128",
@@ -17,3 +18,17 @@ export const DigitaloceanIcon = createIcon({
     })
   })
 });
+
+const DigitaloceanIconButton = props => /*#__PURE__*/_jsx(Button, {
+  rightIcon: /*#__PURE__*/_jsx(DigitaloceanIcon, {}),
+  colorScheme: "teal",
+  variant: "solid",
+  rounded: "xl",
+  ...props,
+  children: /*#__PURE__*/_jsx(Text, {
+    marginTop: 1,
+    children: "DigitaloceanIcon"
+  })
+});
+
+export { DigitaloceanIcon, DigitaloceanIconButton };

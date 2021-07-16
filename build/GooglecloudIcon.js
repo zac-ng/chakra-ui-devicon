@@ -1,7 +1,8 @@
 import { createIcon } from "@chakra-ui/icons";
+import { Button, Text } from "@chakra-ui/react";
 import { jsx as _jsx } from "react/jsx-runtime";
 import { jsxs as _jsxs } from "react/jsx-runtime";
-export const GooglecloudIcon = createIcon({
+const GooglecloudIcon = createIcon({
   displayName: "GooglecloudIcon",
   path: /*#__PURE__*/_jsxs("svg", {
     xmlns: "http://www.w3.org/2000/svg",
@@ -21,3 +22,17 @@ export const GooglecloudIcon = createIcon({
     })]
   })
 });
+
+const GooglecloudIconButton = props => /*#__PURE__*/_jsx(Button, {
+  rightIcon: /*#__PURE__*/_jsx(GooglecloudIcon, {}),
+  colorScheme: "teal",
+  variant: "solid",
+  rounded: "xl",
+  ...props,
+  children: /*#__PURE__*/_jsx(Text, {
+    marginTop: 1,
+    children: "GooglecloudIcon"
+  })
+});
+
+export { GooglecloudIcon, GooglecloudIconButton };

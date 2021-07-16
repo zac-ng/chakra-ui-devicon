@@ -1,6 +1,15 @@
 import { createIcon } from "@chakra-ui/icons";
+import { Button, Text } from "@chakra-ui/react";
 
-export const {{pascalCase name}} = createIcon({
+const {{pascalCase name}} = createIcon({
   displayName: "{{pascalCase name}}",
   path: ({{path}})
 })
+
+const {{pascalCase name}}Button = (props) => (
+  <Button rightIcon={<{{pascalCase name}} />} colorScheme='teal' variant="solid" rounded="xl" {...props}>
+    <Text marginTop={1}>{{pascalCase name}}</Text>
+  </Button>
+);
+
+export { {{pascalCase name}},  {{pascalCase name}}Button }

@@ -1,7 +1,8 @@
 import { createIcon } from "@chakra-ui/icons";
+import { Button, Text } from "@chakra-ui/react";
 import { jsx as _jsx } from "react/jsx-runtime";
 import { jsxs as _jsxs } from "react/jsx-runtime";
-export const RubymineIcon = createIcon({
+const RubymineIcon = createIcon({
   displayName: "RubymineIcon",
   path: /*#__PURE__*/_jsxs("svg", {
     "data-name": "ruby mine",
@@ -16,3 +17,17 @@ export const RubymineIcon = createIcon({
     })]
   })
 });
+
+const RubymineIconButton = props => /*#__PURE__*/_jsx(Button, {
+  rightIcon: /*#__PURE__*/_jsx(RubymineIcon, {}),
+  colorScheme: "teal",
+  variant: "solid",
+  rounded: "xl",
+  ...props,
+  children: /*#__PURE__*/_jsx(Text, {
+    marginTop: 1,
+    children: "RubymineIcon"
+  })
+});
+
+export { RubymineIcon, RubymineIconButton };

@@ -1,7 +1,8 @@
 import { createIcon } from "@chakra-ui/icons";
+import { Button, Text } from "@chakra-ui/react";
 import { jsx as _jsx } from "react/jsx-runtime";
 import { jsxs as _jsxs } from "react/jsx-runtime";
-export const RIcon = createIcon({
+const RIcon = createIcon({
   displayName: "RIcon",
   path: /*#__PURE__*/_jsxs("svg", {
     preserveAspectRatio: "xMidYMid",
@@ -50,3 +51,17 @@ export const RIcon = createIcon({
     })]
   })
 });
+
+const RIconButton = props => /*#__PURE__*/_jsx(Button, {
+  rightIcon: /*#__PURE__*/_jsx(RIcon, {}),
+  colorScheme: "teal",
+  variant: "solid",
+  rounded: "xl",
+  ...props,
+  children: /*#__PURE__*/_jsx(Text, {
+    marginTop: 1,
+    children: "RIcon"
+  })
+});
+
+export { RIcon, RIconButton };
