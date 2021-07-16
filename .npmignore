@@ -1,4 +1,4 @@
 src/
 babel.config.json
 plopfile.json
-TODO.md
+*.tar

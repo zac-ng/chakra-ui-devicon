@@ -1,8 +1,8 @@
 # Chakra UI Devicons
 
-This package contains components for custom icons from the [devicon](https://github.com/devicons/devicon/) library.  The library creates Icon components for use in Chakra UI projects.  Feel free to fork this to create your own icons for other React packages.
+This package contains components for custom icons from the [devicon](https://github.com/devicons/devicon/) library. The library creates Icon components for use in Chakra UI projects. Feel free to fork this to create your own icons for other React packages.
 
-This package uses plop.js to autogenerate icon components for Chakra UI.  The individual components are contained with the components folder, and can be imported through the module.
+This package uses plop.js to autogenerate icon components for Chakra UI. The individual components are contained with the components folder, and can be imported through the module.
 
 ## Installation
 
