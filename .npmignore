@@ -1,4 +1,7 @@
 src/
 babel.config.json
 plopfile.json
+.prettierignore
+.prettierrc.json
+plopfile.js
 *.tar

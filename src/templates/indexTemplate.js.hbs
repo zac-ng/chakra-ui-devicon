@@ -1,12 +1,13 @@
 {{#each files}}
 	import {
 	{{this}},
-	{{this}}Button } from './build/{{this}}'
+	{{!-- {{this}}Button  --}}
+	} from './build/{{this}}'
 {{/each}}
 
 export {
 {{#each files}}
 	{{this}},
-	{{this}}Button,
+	{{!-- {{this}}Button, --}}
 {{/each}}
 }
