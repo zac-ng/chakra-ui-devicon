@@ -2,6 +2,9 @@
 	Aarch64Icon,
 	} from './build/Aarch64Icon'
 	import {
+	AdonisjsIcon,
+	} from './build/AdonisjsIcon'
+	import {
 	AftereffectsIcon,
 	} from './build/AftereffectsIcon'
 	import {
@@ -17,6 +20,9 @@
 	ApacheIcon,
 	} from './build/ApacheIcon'
 	import {
+	ApachekafkaIcon,
+	} from './build/ApachekafkaIcon'
+	import {
 	AppceleratorIcon,
 	} from './build/AppceleratorIcon'
 	import {
@@ -31,6 +37,9 @@
 	import {
 	AtomIcon,
 	} from './build/AtomIcon'
+	import {
+	AzureIcon,
+	} from './build/AzureIcon'
 	import {
 	BabelIcon,
 	} from './build/BabelIcon'
@@ -61,6 +70,12 @@
 	import {
 	CakephpIcon,
 	} from './build/CakephpIcon'
+	import {
+	CanvaIcon,
+	} from './build/CanvaIcon'
+	import {
+	CentosIcon,
+	} from './build/CentosIcon'
 	import {
 	CeylonIcon,
 	} from './build/CeylonIcon'
@@ -122,6 +137,9 @@
 	DebianIcon,
 	} from './build/DebianIcon'
 	import {
+	DenojsIcon,
+	} from './build/DenojsIcon'
+	import {
 	DeviconIcon,
 	} from './build/DeviconIcon'
 	import {
@@ -173,8 +191,14 @@
 	FacebookIcon,
 	} from './build/FacebookIcon'
 	import {
+	FeathersjsIcon,
+	} from './build/FeathersjsIcon'
+	import {
 	FigmaIcon,
 	} from './build/FigmaIcon'
+	import {
+	FilezillaIcon,
+	} from './build/FilezillaIcon'
 	import {
 	FirebaseIcon,
 	} from './build/FirebaseIcon'
@@ -199,6 +223,9 @@
 	import {
 	GatsbyIcon,
 	} from './build/GatsbyIcon'
+	import {
+	GccIcon,
+	} from './build/GccIcon'
 	import {
 	GimpIcon,
 	} from './build/GimpIcon'
@@ -275,6 +302,9 @@
 	IonicIcon,
 	} from './build/IonicIcon'
 	import {
+	JamstackIcon,
+	} from './build/JamstackIcon'
+	import {
 	JasmineIcon,
 	} from './build/JasmineIcon'
 	import {
@@ -295,6 +325,9 @@
 	import {
 	JetbrainsIcon,
 	} from './build/JetbrainsIcon'
+	import {
+	JiraIcon,
+	} from './build/JiraIcon'
 	import {
 	JqueryIcon,
 	} from './build/JqueryIcon'
@@ -341,6 +374,9 @@
 	MagentoIcon,
 	} from './build/MagentoIcon'
 	import {
+	MarkdownIcon,
+	} from './build/MarkdownIcon'
+	import {
 	MaterialuiIcon,
 	} from './build/MaterialuiIcon'
 	import {
@@ -368,8 +404,14 @@
 	MoodleIcon,
 	} from './build/MoodleIcon'
 	import {
+	MsdosIcon,
+	} from './build/MsdosIcon'
+	import {
 	MysqlIcon,
 	} from './build/MysqlIcon'
+	import {
+	Neo4jIcon,
+	} from './build/Neo4jIcon'
 	import {
 	NestjsIcon,
 	} from './build/NestjsIcon'
@@ -392,14 +434,29 @@
 	NpmIcon,
 	} from './build/NpmIcon'
 	import {
+	NumpyIcon,
+	} from './build/NumpyIcon'
+	import {
+	NuxtjsIcon,
+	} from './build/NuxtjsIcon'
+	import {
 	ObjectivecIcon,
 	} from './build/ObjectivecIcon'
 	import {
 	OcamlIcon,
 	} from './build/OcamlIcon'
 	import {
+	OpenglIcon,
+	} from './build/OpenglIcon'
+	import {
+	OperaIcon,
+	} from './build/OperaIcon'
+	import {
 	OracleIcon,
 	} from './build/OracleIcon'
+	import {
+	PandasIcon,
+	} from './build/PandasIcon'
 	import {
 	PerlIcon,
 	} from './build/PerlIcon'
@@ -425,14 +482,23 @@
 	PremiereproIcon,
 	} from './build/PremiereproIcon'
 	import {
+	ProcessingIcon,
+	} from './build/ProcessingIcon'
+	import {
 	ProtractorIcon,
 	} from './build/ProtractorIcon'
+	import {
+	PuttyIcon,
+	} from './build/PuttyIcon'
 	import {
 	PycharmIcon,
 	} from './build/PycharmIcon'
 	import {
 	PythonIcon,
 	} from './build/PythonIcon'
+	import {
+	QtIcon,
+	} from './build/QtIcon'
 	import {
 	RIcon,
 	} from './build/RIcon'
@@ -494,6 +560,9 @@
 	SlackIcon,
 	} from './build/SlackIcon'
 	import {
+	SocketioIcon,
+	} from './build/SocketioIcon'
+	import {
 	SourcetreeIcon,
 	} from './build/SourcetreeIcon'
 	import {
@@ -509,8 +578,17 @@
 	SshIcon,
 	} from './build/SshIcon'
 	import {
+	StorybookIcon,
+	} from './build/StorybookIcon'
+	import {
 	StylusIcon,
 	} from './build/StylusIcon'
+	import {
+	SubversionIcon,
+	} from './build/SubversionIcon'
+	import {
+	SvelteIcon,
+	} from './build/SvelteIcon'
 	import {
 	SwiftIcon,
 	} from './build/SwiftIcon'
@@ -527,8 +605,17 @@
 	ThealgorithmsIcon,
 	} from './build/ThealgorithmsIcon'
 	import {
+	ThreejsIcon,
+	} from './build/ThreejsIcon'
+	import {
 	TomcatIcon,
 	} from './build/TomcatIcon'
+	import {
+	TortoisegitIcon,
+	} from './build/TortoisegitIcon'
+	import {
+	TowergitIcon,
+	} from './build/TowergitIcon'
 	import {
 	TravisIcon,
 	} from './build/TravisIcon'
@@ -548,6 +635,9 @@
 	UbuntuIcon,
 	} from './build/UbuntuIcon'
 	import {
+	UnityIcon,
+	} from './build/UnityIcon'
+	import {
 	UnixIcon,
 	} from './build/UnixIcon'
 	import {
@@ -566,11 +656,11 @@
 	VscodeIcon,
 	} from './build/VscodeIcon'
 	import {
-	VueStorefrontIcon,
-	} from './build/VueStorefrontIcon'
-	import {
 	VuejsIcon,
 	} from './build/VuejsIcon'
+	import {
+	VuestorefrontIcon,
+	} from './build/VuestorefrontIcon'
 	import {
 	WeblateIcon,
 	} from './build/WeblateIcon'
@@ -610,16 +700,19 @@
 
 export {
 	Aarch64Icon,
+	AdonisjsIcon,
 	AftereffectsIcon,
 	AmazonwebservicesIcon,
 	AndroidIcon,
 	AngularjsIcon,
 	ApacheIcon,
+	ApachekafkaIcon,
 	AppceleratorIcon,
 	AppleIcon,
 	AppwriteIcon,
 	ArduinoIcon,
 	AtomIcon,
+	AzureIcon,
 	BabelIcon,
 	BackbonejsIcon,
 	BashIcon,
@@ -630,6 +723,8 @@ export {
 	BulmaIcon,
 	CIcon,
 	CakephpIcon,
+	CanvaIcon,
+	CentosIcon,
 	CeylonIcon,
 	ChromeIcon,
 	CircleciIcon,
@@ -650,6 +745,7 @@ export {
 	D3jsIcon,
 	DartIcon,
 	DebianIcon,
+	DenojsIcon,
 	DeviconIcon,
 	DigitaloceanIcon,
 	DjangoIcon,
@@ -667,7 +763,9 @@ export {
 	ErlangIcon,
 	ExpressIcon,
 	FacebookIcon,
+	FeathersjsIcon,
 	FigmaIcon,
+	FilezillaIcon,
 	FirebaseIcon,
 	FirefoxIcon,
 	FlaskIcon,
@@ -676,6 +774,7 @@ export {
 	FsharpIcon,
 	GatlingIcon,
 	GatsbyIcon,
+	GccIcon,
 	GimpIcon,
 	GitIcon,
 	GithubIcon,
@@ -701,6 +800,7 @@ export {
 	InkscapeIcon,
 	IntellijIcon,
 	IonicIcon,
+	JamstackIcon,
 	JasmineIcon,
 	JavaIcon,
 	JavascriptIcon,
@@ -708,6 +808,7 @@ export {
 	JenkinsIcon,
 	JestIcon,
 	JetbrainsIcon,
+	JiraIcon,
 	JqueryIcon,
 	JuliaIcon,
 	JupyterIcon,
@@ -723,6 +824,7 @@ export {
 	LinuxIcon,
 	LuaIcon,
 	MagentoIcon,
+	MarkdownIcon,
 	MaterialuiIcon,
 	MatlabIcon,
 	MeteorIcon,
@@ -732,7 +834,9 @@ export {
 	ModxIcon,
 	MongodbIcon,
 	MoodleIcon,
+	MsdosIcon,
 	MysqlIcon,
+	Neo4jIcon,
 	NestjsIcon,
 	NextjsIcon,
 	NginxIcon,
@@ -740,9 +844,14 @@ export {
 	NodejsIcon,
 	NodewebkitIcon,
 	NpmIcon,
+	NumpyIcon,
+	NuxtjsIcon,
 	ObjectivecIcon,
 	OcamlIcon,
+	OpenglIcon,
+	OperaIcon,
 	OracleIcon,
+	PandasIcon,
 	PerlIcon,
 	PhalconIcon,
 	PhoenixIcon,
@@ -751,9 +860,12 @@ export {
 	PhpstormIcon,
 	PostgresqlIcon,
 	PremiereproIcon,
+	ProcessingIcon,
 	ProtractorIcon,
+	PuttyIcon,
 	PycharmIcon,
 	PythonIcon,
+	QtIcon,
 	RIcon,
 	RailsIcon,
 	RaspberrypiIcon,
@@ -774,32 +886,40 @@ export {
 	ShopwareIcon,
 	SketchIcon,
 	SlackIcon,
+	SocketioIcon,
 	SourcetreeIcon,
 	SpringIcon,
 	SpssIcon,
 	SqlalchemyIcon,
 	SshIcon,
+	StorybookIcon,
 	StylusIcon,
+	SubversionIcon,
+	SvelteIcon,
 	SwiftIcon,
 	SymfonyIcon,
 	TailwindcssIcon,
 	TensorflowIcon,
 	ThealgorithmsIcon,
+	ThreejsIcon,
 	TomcatIcon,
+	TortoisegitIcon,
+	TowergitIcon,
 	TravisIcon,
 	TrelloIcon,
 	TwitterIcon,
 	TypescriptIcon,
 	Typo3Icon,
 	UbuntuIcon,
+	UnityIcon,
 	UnixIcon,
 	UwsgiIcon,
 	VagrantIcon,
 	VimIcon,
 	VisualstudioIcon,
 	VscodeIcon,
-	VueStorefrontIcon,
 	VuejsIcon,
+	VuestorefrontIcon,
 	WeblateIcon,
 	WebpackIcon,
 	WebstormIcon,

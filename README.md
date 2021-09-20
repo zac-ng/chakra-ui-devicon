@@ -12,11 +12,21 @@ To install Chakra UI Devicons run:
 npm i chakra-ui-devicon
 ```
 
+To rebuild run the bash script in src/scripts
+
+```
+./generateComponents.sh
+```
+
+## Importing
+
 To import an icon (such as React.js) run the following:
 
 ```
 import { ReactIcon } from 'chakra-ui-devicon'
 ```
+
+## Deprecated
 
 To import the button run the following:
 

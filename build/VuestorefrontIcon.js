@@ -1,8 +1,8 @@
 import { createIcon } from "@chakra-ui/icons";
 import { jsx as _jsx } from "react/jsx-runtime";
 import { jsxs as _jsxs } from "react/jsx-runtime";
-const VueStorefrontIcon = createIcon({
-  displayName: "VueStorefrontIcon",
+const VuestorefrontIcon = createIcon({
+  displayName: "VuestorefrontIcon",
   path: /*#__PURE__*/_jsxs("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 128 128",
@@ -24,4 +24,4 @@ const VueStorefrontIcon = createIcon({
     })]
   })
 });
-export { VueStorefrontIcon };
+export { VuestorefrontIcon };
